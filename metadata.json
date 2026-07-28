@@ -1,0 +1,6 @@
+{
+  "name": "Industrial Energy Cost & Total Cost of Ownership (TCO) Decision Support Toolkit",
+  "description": "SaaS Web Tool for Industrial & Commercial Energy Cost & TCO Comparison across Natural Gas, LPG, Electricity, and Diesel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
