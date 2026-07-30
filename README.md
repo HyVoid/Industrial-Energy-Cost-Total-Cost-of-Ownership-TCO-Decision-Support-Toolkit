@@ -9,7 +9,7 @@
 > ## **No signup. No installation. Free.**
 >
 > 🌐 **Open in Browser**  
-> HTML Live Version *(Coming Soon)*
+> [HTML Live Version](https://hyvoid.github.io/Industrial-Energy-Cost-Total-Cost-of-Ownership-TCO-Decision-Support-Toolkit/)
 >
 > 📥 **Download Excel**  
 > [google doc view](https://docs.google.com/spreadsheets/d/1T_y54Oz2BozWeDi9Dqx7B3JmAt-gKILhFrEyobbddhs/edit?usp=sharing)
