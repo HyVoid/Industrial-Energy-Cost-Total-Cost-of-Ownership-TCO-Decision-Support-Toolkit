@@ -18,22 +18,6 @@
 
 ---
 
-# Screenshots
-
-### Browser Version
-
-<!-- screenshot: browser version -->
-
-*A browser-based decision workspace for quickly evaluating multiple industrial energy options without installing spreadsheet software.*
-
-### Excel Version
-
-<!-- screenshot: excel version -->
-
-*The complete workbook containing parameter management, calculation engine, sensitivity analysis, and executive dashboards.*
-
----
-
 # What It Helps You Decide
 
 Instead of comparing fuel prices alone, this toolkit helps evaluate the complete business impact of alternative industrial energy solutions.
