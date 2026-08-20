@@ -14,7 +14,7 @@
 > 📥 **Download Excel**  
 > [google doc view](https://docs.google.com/spreadsheets/d/1T_y54Oz2BozWeDi9Dqx7B3JmAt-gKILhFrEyobbddhs/edit?usp=sharing)
 >
-> [excel template purchase]()
+> [excel template purchase](https://alexhasgreatestuff.gumroad.com/l/wanpmw)
 
 ---
 
