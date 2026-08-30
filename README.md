@@ -14,7 +14,7 @@ Try the browser version for free. If you need the Excel version, you can buy it 
 > [HTML Live Version](https://hyvoid.github.io/Industrial-Energy-Cost-Total-Cost-of-Ownership-TCO-Decision-Support-Toolkit/)
 >
 > 📥 **Download Excel**  
-> [excel template purchase](https://alexhasgreatestuff.gumroad.com/l/wanpmw)
+> [excel template purchase](https://alexhasgreatestuff.gumroad.com/l/wanpmw?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=industrial-energy-tco)
 
 ---
 
