@@ -8,7 +8,7 @@
 
 **No signup. No installation. Free in your browser.**
 
-Try the browser version for free. If you need the Excel version, you can buy it with a 7-day money-back guarantee.
+Try the browser version for free. If you need the Excel version, you can buy it with a 30-day, no-questions-asked money-back guarantee.
 >
 > 🌐 **Open in Browser**  
 > [HTML Live Version](https://hyvoid.github.io/Industrial-Energy-Cost-Total-Cost-of-Ownership-TCO-Decision-Support-Toolkit/)
