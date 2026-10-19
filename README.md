@@ -1,3 +1,5 @@
+[ 🌐 عربي ](README.ar.md) | [ 🇩🇪 Deutsch ](README.de.md) | [ 🇫🇷 Français ](README.fr.md) | [ 🇳🇱 Nederlands ](README.nl.md) | [ 🇪🇸 Español ](README.sp.md) | [ 🇬🇧 English ](README.md)
+
 # Industrial Energy Cost & Total Cost of Ownership (TCO) Decision Support Toolkit
 
 ![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
@@ -18,7 +20,7 @@ Try the browser version for free. If you need the Excel version, you can buy it 
 
 ---
 
-# What It Helps You Decide
+## What It Helps You Decide
 
 Instead of comparing fuel prices alone, this toolkit helps evaluate the complete business impact of alternative industrial energy solutions.
 
@@ -41,7 +43,7 @@ the workbook answers the question decision makers actually face:
 
 ---
 
-# Quick Start Workflow
+## Quick Start Workflow
 
 Getting meaningful results requires only a few minutes because the workbook separates project inputs, engineering assumptions, calculations, and reporting into dedicated layers.
 
@@ -108,7 +110,7 @@ Sensitivity analysis updates automatically, allowing multiple commercial scenari
 
 ---
 
-# Why I Built This
+## Why I Built This
 
 Many industrial energy investment decisions appear straightforward because decision teams often compare only the advertised fuel price.
 
@@ -160,7 +162,7 @@ This workbook packages that analytical reasoning into a reusable decision-suppor
 
 ---
 
-# Common Industrial Energy Evaluation Problems This Solves
+## Common Industrial Energy Evaluation Problems This Solves
 
 | Problem | Without This Tool | With This Tool |
 |----------|-------------------|----------------|
@@ -175,7 +177,7 @@ This workbook packages that analytical reasoning into a reusable decision-suppor
 
 ---
 
-# Who This Is For
+## Who This Is For
 
 This toolkit is designed for professionals who need to compare industrial or commercial energy options using consistent financial and engineering assumptions rather than isolated cost figures.
 
@@ -201,7 +203,7 @@ Instead, it fills the decision gap that exists before detailed engineering begin
 
 ---
 
-# About
+## About
 
 I build lightweight Excel and browser-based decision-support tools for situations where there are simply too many variables to evaluate mentally.
 
@@ -215,7 +217,7 @@ The **Industrial Energy Cost & Total Cost of Ownership (TCO) Decision Support To
 
 ---
 
-# Technical Details
+## Technical Details
 
 <details>
 <summary><strong>For technical reviewers, Excel practitioners, and collaborators</strong></summary>
