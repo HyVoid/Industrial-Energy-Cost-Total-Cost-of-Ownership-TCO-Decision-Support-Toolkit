@@ -15,7 +15,7 @@
 Use the interactive web application for rapid initial screening, or download the unlocked Excel spreadsheet model for deep financial auditing, multi-scenario saving, and client presentations—backed by a 30-day, no-questions-asked money-back guarantee.
 
 > 🌐 **Launch Free Web Calculator**  
-> [Interactive Industrial Energy Cost & TCO Web Calculator (Browser Edition)](https://hyvoid.github.io/Industrial-Energy-Cost-Total-Cost-of-Ownership-TCO-Decision-Support-Toolkit/)
+> [Interactive Industrial Energy Cost & TCO Web Calculator (Browser Edition)](https://hyvoid.github.io/industrial-energy-tco-calculator/)
 >
 > 📥 **Get the Full Spreadsheet Model**  
 > [Download the Editable Industrial Energy TCO & Fuel Comparison Excel Template](https://www.theseusworkshop.com/l/wanpmw?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=industrial-energy-tco)
@@ -53,7 +53,7 @@ Open the **Project Input** module to establish your facility's baseline operatio
 - **Weighted Average Cost of Capital (WACC / Discount Rate %)**
 - **Equipment Depreciation & CAPEX Amortization Period** (years)
 
-*Action:* Test your baseline numbers instantly using the [Free Browser TCO Calculator](https://hyvoid.github.io/Industrial-Energy-Cost-Total-Cost-of-Ownership-TCO-Decision-Support-Toolkit/).
+*Action:* Test your baseline numbers instantly using the [Free Browser TCO Calculator](https://hyvoid.github.io/industrial-energy-tco-calculator/).
 
 ---
 
