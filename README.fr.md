@@ -1,226 +1,177 @@
 [ 🌐 عربي ](README.ar.md) | [ 🇩🇪 Deutsch ](README.de.md) | [ 🇫🇷 Français ](README.fr.md) | [ 🇳🇱 Nederlands ](README.nl.md) | [ 🇪🇸 Español ](README.sp.md) | [ 🇬🇧 English ](README.md)
 
-# Boîte à outils d'aide à la décision pour le coût de l'énergie industrielle et le coût total de possession (TCO)
+# Calculateur de coût total de possession (TCO) pour l'énergie industrielle et modèle Excel de comparaison des coûts de combustible (gaz naturel vs. GPL vs. électricité vs. diesel)
+<img width="2880" height="1228" alt="image" src="https://github.com/user-attachments/assets/869c90a4-4548-491b-b4ae-65b7bca29c50" />
+
 
 ![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
 ![Platform](https://img.shields.io/badge/Platform-Browser%20%2B%20Excel-success)
-![Tool](https://img.shields.io/badge/Tool-Decision%20Support-orange)
+![Tool](https://img.shields.io/badge/Tool-TCO%20Financial%20Model-orange)
 
-**Comparez le gaz naturel, le GPL (LPG), l'électricité et le diesel sur une base d'énergie utile réelle—en combinant coût du combustible, efficacité des équipements, investissement d'infrastructure et coût de possession sur le cycle de vie dans un seul cadre décisionnel gratuit, sans installation, disponible aux formats Navigateur et Excel.**
+**Une calculatrice interactive de coût total de possession (TCO) pour l'énergie industrielle et un modèle de tableur Excel conçus pour comparer le gaz naturel, le GPL, l'électricité et le diesel sur une base normalisée d'énergie utile ($/GJ). Évaluez le CAPEX de chauffage industriel, l'OPEX, le rendement thermique des chaudières, le COP des pompes à chaleur et les coûts de possession sur le cycle de vie dans un cadre normalisé d'économie de l'ingénierie—disponible sous forme de calculatrice web gratuite et de modèle Excel téléchargeable.**
 
-**Aucune inscription. Aucune installation. Gratuit dans votre navigateur.**
+**Aucune inscription. Aucune installation. Gratuit à tester dans votre navigateur.**
 
-Essayez gratuitement la version navigateur. Si vous avez besoin de la version Excel, vous pouvez l'acheter avec une garantie de remboursement de 30 jours sans question.
+Utilisez l'application web interactive pour un premier filtrage rapide, ou téléchargez le modèle de tableur Excel déverrouillé pour des audits financiers approfondis, la sauvegarde de scénarios multiples et les présentations clients—soutenu par une garantie de remboursement de 30 jours sans question.
+
+> 🌐 **Ouvrir la calculatrice web gratuite**  
+> [Calculatrice web interactive des coûts énergétiques industriels et du TCO (Édition navigateur)](https://hyvoid.github.io/industrial-energy-tco-calculator/)
 >
-> 🌐 **Ouvrir dans le navigateur**  
-> [Version HTML en ligne](https://hyvoid.github.io/Industrial-Energy-Cost-Total-Cost-of-Ownership-TCO-Decision-Support-Toolkit/)
->
-> 📥 **Télécharger Excel**  
-> [achat du modèle Excel](https://www.theseusworkshop.com/l/wanpmw?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=industrial-energy-tco)
+> 📥 **Obtenir le modèle de tableur complet**  
+> [Télécharger le modèle Excel éditable de TCO énergétique industriel et de comparaison des combustibles](https://www.theseusworkshop.com/l/wanpmw?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=industrial-energy-tco)
 
 ---
 
-## Ce que cela vous aide à décider
+## Ce que cela vous aide à suivre et à décider : correspondance points faibles / solutions
 
-Au lieu de comparer les seuls prix des combustibles, cette boîte à outils aide à évaluer l'impact commercial complet des solutions énergétiques industrielles alternatives.
+Au lieu de comparer les tarifs des services publics de manière isolée, cette boîte à outils d'économie de l'ingénierie suit et résout les angles morts critiques dans les évaluations de **décarbonisation industrielle**, de **remplacement de chaudières** et d'**électrification des sites** :
 
-Elle apporte de la visibilité sur :
-
-- Le coût total de possession (TCO) annuel de chaque option énergétique concurrente.
-- Le coût par unité d'énergie utile après prise en compte de l'efficacité des équipements et du COP des pompes à chaleur.
-- Les besoins d'investissement d'infrastructure avant de choisir une source d'énergie.
-- Si les économies d'exploitation justifient un investissement en capital plus élevé.
-- Comment les variations de prix des combustibles affectent la solution privilégiée.
-- Quelle option énergétique reste économiquement résiliente sous différentes conditions de marché.
+| Métrique de suivi cible / point faible | L'angle mort analytique courant | Comment ce modèle de TCO le résout et le suit |
+| :--- | :--- | :--- |
+| **Coût normalisé de l'énergie utile ($/GJ ou $/MMBtu)** | Comparer les prix bruts des combustibles ($/kWh, $/Therm, $/Liter) sans ajuster les pertes de conversion. | Suit la **chaleur utile livrée** en intégrant le rendement thermique de la chaudière à combustion (%) et le COP de la pompe à chaleur industrielle. |
+| **CAPEX d'infrastructure annualisé et WACC** | Traiter les frais de raccordement au réseau gaz, les améliorations de postes électriques ou les réservoirs de stockage comme des coûts irrécupérables. | Suit l'**amortissement du CAPEX** initial sur le cycle de vie de l'actif en utilisant votre **taux d'actualisation (WACC)** spécifique via le facteur de recouvrement du capital. |
+| **OPEX de cycle de vie mixte et tarifs fixes des services publics** | Ignorer les charges mensuelles de pointe, les frais de compteur et les programmes de maintenance préventive. | Suit à la fois la dépense variable en combustible et les charges fixes de service pour produire un véritable **coût total de possession (TCO) annuel**. |
+| **Sensibilité croisée au prix des combustibles et analyse du seuil de rentabilité** | Les tableurs statiques se brisent lorsque les marchés de matières premières fluctuent ou qu'une tarification du carbone est introduite. | Suit la **sensibilité au prix des combustibles en multi-scénarios**, mettant à jour dynamiquement le classement économique à mesure que les tarifs électriques ou les prix du gaz évoluent. |
+| **Arbitrages entre électrification et combustibles fossiles** | Supposer que les pompes à chaleur industrielles sont trop chères en raison des tarifs électriques élevés par kWh. | Quantifie l'**arbitrage exact entre OPEX et CAPEX**, montrant quand la haute efficacité du COP compense les tarifs électriques et les coûts d'équipement plus élevés. |
 
 Plutôt que de demander :
+> *« Quel tarif de combustible semble le moins cher sur le papier ? »*
 
-> « Quel combustible est le moins cher ? »
-
-le classeur répond à la question à laquelle les décideurs sont réellement confrontés :
-
-> **« Quelle solution énergétique offre le coût de cycle de vie le plus bas pour ce projet ? »**
+Ce modèle financier répond à la question à laquelle les parties prenantes des projets d'investissement sont réellement confrontées :
+> **« Quelle solution de chauffage et d'énergie industriels offre le coût de cycle de vie ajusté au risque le plus bas pour le profil opérationnel spécifique de notre site ? »**
 
 ---
 
-## Flux de travail de démarrage rapide
+## Comment exécuter une analyse de coûts de combustible industriel et de TCO (flux de travail de démarrage rapide)
 
-Obtenir des résultats significatifs ne demande que quelques minutes car le classeur sépare les entrées de projet, les hypothèses d'ingénierie, les calculs et les rapports en couches dédiées.
+Obtenir des comparaisons financières et d'ingénierie prêtes pour l'audit prend moins de 5 minutes. L'architecture sépare proprement les entrées du projet, les paramètres thermodynamiques, les formules financières et les couches de reporting exécutif.
 
-### 1. Configurer les hypothèses du projet
+### Étape 1 : Configurer les paramètres de base du site et financiers
+Ouvrez le module **Project Input** pour établir les conditions limites opérationnelles et financières de base de votre installation :
+- **Demande annuelle en énergie utile** (GJ/an ou MMBtu/an)
+- **Heures d'exploitation du site** (heures/an pour le calcul du facteur de capacité)
+- **Coût moyen pondéré du capital (WACC / taux d'actualisation %)**
+- **Période d'amortissement et de dépréciation des équipements / du CAPEX** (années)
 
-Ouvrez la feuille **Project Input** et saisissez les informations qui définissent le projet.
-
-Les paramètres typiques comprennent :
-
-- La demande annuelle en énergie utile
-- Les heures d'exploitation
-- Le taux d'actualisation (WACC)
-- La période d'amortissement du CAPEX
-
-Ces valeurs restent normalement stables tout au long d'une évaluation et n'ont besoin d'être mises à jour que lorsque les hypothèses du projet changent.
+*Action :* Testez instantanément vos chiffres de base avec la [calculatrice TCO gratuite du navigateur](https://hyvoid.github.io/industrial-energy-tco-calculator/).
 
 ---
 
-### 2. Mettre à jour les hypothèses énergétiques et d'infrastructure
+### Étape 2 : Saisir les tarifs des services publics, le rendement des équipements et les devis de CAPEX
+Remplissez les tableaux de paramètres avec vos tarifs locaux de services publics et les devis d'ingénierie des fournisseurs :
+- **Tarifs commerciaux des combustibles :** tarifs de gaz naturel, prix du GPL en vrac, tarifs électriques industriels et coûts du diesel.
+- **Performance thermodynamique :** rendement thermique des chaudières gaz/diesel (%) et coefficient de performance (COP) de la pompe à chaleur industrielle.
+- **Coûts d'investissement et fixes :** investissement en infrastructure gaz/réseau, charges mensuelles de demande des services publics et coûts annuels d'O&M.
 
-Maintenez les informations de marché à jour dans les feuilles de paramètres dédiées.
-
-Les entrées typiques comprennent :
-
-- Les prix du gaz naturel
-- Les prix du GPL (LPG)
-- Les tarifs d'électricité
-- Les prix du diesel
-- L'efficacité des équipements
-- Le COP des pompes à chaleur
-- Les frais de service mensuels
-- L'investissement d'infrastructure
-- Les coûts de maintenance annuels
-
-Aucune formule de calcul ne nécessite de modification.
+*Aucune maintenance de formule requise—toutes les conversions d'unités et les normalisations de pouvoir calorifique se font automatiquement.*
 
 ---
 
-### 3. Examiner la comparaison générée automatiquement
-
-Passez au tableau de bord.
-
-Le classeur recalcule immédiatement :
-
-- La consommation annuelle de combustible
-- Les dépenses annuelles de combustible
-- Le CAPEX annualisé
-- Les coûts d'exploitation fixes
-- Le coût total de possession (TCO)
-- Le coût normalisé par Useful GJ
-- Le classement économique de chaque option disponible
-
-Aucun recalcul manuel ni maintenance de formule n'est requis.
+### Étape 3 : Auditer le tableau de bord TCO automatisé et le classement LCOH
+Passez au **Executive Summary Dashboard** pour examiner les résultats d'économie de l'ingénierie en temps réel :
+- **Consommation annuelle de combustible** (dans les unités natives de facturation et les unités énergétiques normalisées)
+- **Répartition du CAPEX annualisé par rapport à l'OPEX variable**
+- **Coût nivelé de la chaleur (LCOH) / coût normalisé par GJ utile**
+- **Classement économique automatisé** entre gaz naturel, GPL, électricité et diesel
 
 ---
 
-### 4. Tester différents scénarios de marché
+### Étape 4 : Exécuter l'analyse de sensibilité au prix des combustibles et exporter vers Excel pour une modélisation réutilisable
+Simulez la volatilité des marchés de matières premières en ajustant les tarifs des combustibles, le WACC ou les hypothèses de CAPEX pour mettre à l'épreuve votre décision d'investissement.
 
-Ajustez les prix des combustibles, les hypothèses de CAPEX ou les paramètres financiers pour simuler des conditions de marché changeantes.
-
-L'analyse de sensibilité se met à jour automatiquement, permettant d'évaluer plusieurs scénarios commerciaux sans reconstruire le modèle.
-
-> **Fixez les hypothèses une fois. Mettez à jour les données de marché si nécessaire. Examinez la recommandation. Actualisez à chaque changement de marché.**
-
----
-
-## Pourquoi j'ai conçu cet outil
-
-Beaucoup de décisions d'investissement en énergie industrielle semblent évidentes parce que les équipes de décision comparent souvent le seul prix de combustible annoncé.
-
-Malheureusement, le prix du combustible est rarement le chiffre qui détermine l'économie à long terme.
-
-Une solution au gaz naturel peut nécessiter la construction d'un pipeline.
-
-Une pompe à chaleur électrique peut consommer de l'électricité plus chère mais atteindre un coefficient de performance (COP) nettement supérieur.
-
-Une installation au GPL peut éviter une infrastructure coûteuse mais encourir des coûts d'exploitation plus élevés au fil du temps.
-
-Une solution diesel peut sembler attractive pour de petits projets tout en devenant de plus en plus coûteuse dès que la consommation annuelle atteint l'échelle de production.
-
-Ces projets deviennent fréquemment des discussions où chaque partie prenante apporte une métrique différente.
-
-Les équipes d'ingénierie se concentrent sur l'efficacité thermique.
-
-Les services financiers évaluent les dépenses d'investissement.
-
-Les responsables d'exploitation priorisent les coûts d'exploitation annuels.
-
-Les achats négocient les contrats de combustible.
-
-Parce que chaque participant mesure un chiffre différent, les comparaisons deviennent incohérentes.
-
-Le véritable problème analytique n'est pas le manque de données.
-
-C'est l'absence d'un cadre décisionnel commun.
-
-J'ai conçu ce classeur pour normaliser chaque option concurrente dans le même langage commercial :
-
-- une énergie utile livrée identique,
-- des hypothèses financières identiques,
-- une structure de coût de cycle de vie identique.
-
-Au lieu de débattre de métriques isolées, chaque option est évaluée par rapport à un cadre économique cohérent.
-
-L'objectif n'est pas de prouver qu'une source d'énergie est universellement meilleure qu'une autre.
-
-L'objectif est d'identifier quelle solution produit le coût total de possession (TCO) le plus bas dans les conditions d'exploitation spécifiques d'un projet donné.
-
-Par exemple, deux propositions concurrentes peuvent initialement sembler favoriser le gaz naturel parce que son prix de combustible est inférieur à celui de l'électricité.
-
-Après intégration du COP des pompes à chaleur, de l'investissement d'infrastructure, de la maintenance annuelle, des frais fixes de services publics et de la récupération du capital, l'électricité peut produire un coût de cycle de vie annuel inférieur malgré un tarif énergétique unitaire plus élevé.
-
-Sans normaliser chaque variable dans un modèle TCO commun, cette conclusion est difficile à atteindre avec confiance.
-
-Ce classeur conditionne ce raisonnement analytique dans un cadre d'aide à la décision réutilisable plutôt qu'une feuille de calcul ponctuelle.
+> 💡 **Besoin de sauvegarder vos scénarios, de personnaliser les formules ou de présenter au conseil ?**  
+> Bien que la version navigateur soit idéale pour un filtrage en session unique, les projets d'investissement réels nécessitent un audit itératif, une collaboration d'équipe et une documentation permanente.  
+> 👉 **[Téléchargez ici le modèle Excel complet déverrouillé](https://www.theseusworkshop.com/l/wanpmw?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=industrial-energy-tco)** pour sauvegarder des références de projet illimitées, auditer la formule de chaque cellule sous-jacente, personnaliser les feuilles pour différents sites et exporter des graphiques prêts pour le conseil dans vos propositions d'approbation de CAPEX.
 
 ---
 
-## Problèmes courants d'évaluation de l'énergie industrielle résolus par cet outil
+## La logique métier et la méthodologie
 
-| Problème | Sans cet outil | Avec cet outil |
-|----------|-------------------|----------------|
-| Les prix des combustibles sont comparés directement malgré des efficacités différentes. | Un prix de combustible plus bas est supposé à tort être la solution la moins chère. | Chaque option est normalisée à l'énergie utile livrée avant comparaison. |
-| L'investissement d'infrastructure est ignoré lors de l'évaluation des fournisseurs. | Les options capitalistiques apparaissent artificiellement attractives. | Le CAPEX est annualisé et incorporé au coût total de possession (TCO). |
-| Différents services utilisent différentes hypothèses financières. | L'ingénierie et la finance parviennent à des conclusions contradictoires. | Tous les scénarios partagent un cadre de calcul cohérent. |
-| Les frais fixes de services publics sont omis. | Le coût d'exploitation est systématiquement sous-estimé. | Les frais de service fixes sont inclus aux côtés des coûts variables de combustible. |
-| Les prix du marché changent après l'évaluation initiale. | Chaque scénario exige de reconstruire manuellement les feuilles de calcul. | L'analyse de sensibilité met à jour automatiquement les classements avec des hypothèses révisées. |
-| Problème | Sans cet outil | Avec cet outil |
-|----------|-------------------|----------------|
-| Les projets énergétiques sont évalués sur le seul coût d'exploitation de la première année. | Le coût de possession à long terme reste caché jusqu'après la mise en œuvre. | Le combustible, l'infrastructure, la maintenance et le financement sont évalués ensemble sur le cycle de vie de l'actif. |
+Pour combler le fossé de communication entre l'**Ingénierie des Procédés** (qui pense en kW, COP et rendement thermique) et la **Finance d'Entreprise** (qui pense en WACC, VAN et amortissement du CAPEX), cette boîte à outils met en œuvre une méthodologie analytique en 4 étapes :
 
----
-
-## Pour qui c'est destiné
-
-Cette boîte à outils est conçue pour les professionnels qui doivent comparer des options énergétiques industrielles ou commerciales avec des hypothèses financières et d'ingénierie cohérentes plutôt que des chiffres de coût isolés.
-
-Elle est particulièrement précieuse pour :
-
-- Les consultants en énergie industrielle préparant des propositions clients.
-- Les ingénieurs en mécanique et en procédés comparant les technologies de chauffage.
-- Les équipes commerciales évaluant des solutions énergétiques concurrentes.
-- Les propriétaires d'installations planifiant des projets de remplacement d'équipements.
-- Les analystes financiers réalisant des analyses d'investissement sur le cycle de vie.
-- Les entrepreneurs EPC préparant des comparaisons technico-commerciales.
-- Les fabricants évaluant les scénarios de coûts d'exploitation futurs.
-
-Aucune expertise en tableur n'est requise.
-
-Les utilisateurs mettent simplement à jour les hypothèses du projet, examinent le tableau de bord et comparent les recommandations résultantes.
-
-L'édition Navigateur est destinée à l'évaluation rapide pendant les discussions, tandis que l'édition Excel fournit le modèle analytique complet pour la revue technique et financière.
-
-Ce classeur n'est **pas** destiné à remplacer les systèmes de gestion de l'énergie d'entreprise, les plateformes SCADA ou les logiciels de simulation technique détaillée.
-
-Au lieu de cela, il comble le fossé décisionnel qui existe avant le début de l'ingénierie détaillée—quand plusieurs solutions techniquement faisables doivent être comparées rapidement, de manière cohérente et transparente.
+1. **Normalisation thermodynamique de l'énergie (la norme « GJ utile ») :**  
+   Les combustibles bruts sont facturés dans des unités incompatibles (p. ex., $/kWh pour l'électricité, $/m³ ou $/MMBtu pour le gaz naturel, $/liter pour le diesel, $/ton pour le GPL). Comparer les prix unitaires bruts est mathématiquement fallacieux car une chaudière à gaz fonctionnant à 82% de rendement thermique perd 18% de son énergie achetée par la cheminée, tandis qu'une pompe à chaleur industrielle avec un COP de 3.2 livre 3.2 unités de chaleur utile pour chaque unité d'énergie électrique achetée. Ce modèle applique la **Normalisation Thermodynamique du Premier Principe**, convertissant toutes les entrées de combustible en **coût par gigajoule utile livré ($/GJ utile)** sur la base des pouvoirs calorifiques inférieurs (LHV) et des rendements de conversion du système.
+2. **Coût annuel équivalent (EAC) et modélisation du recouvrement du capital :**  
+   Les transitions énergétiques industrielles—comme le passage du GPL à un gazoduc de gaz naturel, ou l'électrification d'un système de vapeur—nécessitent des dépenses d'investissement (CAPEX) initiales très différentes. Diviser simplement le CAPEX par les années du projet ignore la valeur temporelle de l'argent. Cette boîte à outils utilise la méthode du **facteur de recouvrement du capital (CRF)** :
+   $$\text{Annualized CAPEX} = \text{CAPEX} \times \frac{r(1+r)^n}{(1+r)^n - 1}$$
+   *(où $r$ est le WACC d'entreprise/taux d'actualisation et $n$ est la durée de vie économique de l'actif).* Cela convertit les investissements d'infrastructure initiaux irréguliers en un coût annuel équivalent exact qui peut être ajouté directement aux dépenses d'exploitation annuelles.
+3. **Comptabilité d'OPEX à absorption totale :**  
+   Au-delà de la consommation variable de combustible, les factures de services publics industrielles portent des structures fixes importantes—comme les charges de pointe électrique, les frais de réservation de capacité des gazoducs et la maintenance d'équipements spécialisés (p. ex., réglage des brûleurs vs. révisions des compresseurs). La méthodologie agrège **CAPEX annualisé + coût variable de combustible + tarifs fixes des services publics + O&M annuel** pour dériver le véritable **coût nivelé de la chaleur (LCOH)** et le **TCO annuel**.
+4. **Matrice de sensibilité déterministe et de seuil de rentabilité :**  
+   Parce que les actifs industriels fonctionnent pendant 10 to 25 years, une décision fondée sur les prix spot de l'énergie expose l'entreprise à un risque grave sur les matières premières. Le modèle découple les paramètres d'ingénierie statiques des variables de marché volatiles, permettant des **tests de sensibilité instantanés toute chose égale par ailleurs** pour identifier les seuils de rentabilité exacts entre combustibles concurrents.
 
 ---
 
-## À propos
+## Pourquoi j'ai conçu cet outil : combler le fossé entre ingénierie et finance
 
-Je conçois des outils d'aide à la décision légers basés sur Excel et le navigateur pour des situations où il y a tout simplement trop de variables à évaluer mentalement.
+De nombreuses décisions d'investissement en énergie industrielle échouent lors de la revue de direction parce que les parties prenantes évaluent des métriques isolées plutôt qu'un modèle économique unifié :
 
-Plutôt que de créer des logiciels d'entreprise, je me concentre sur la transformation de raisonnements analytiques reproductibles en cadres réutilisables qui aident les gens à prendre de meilleures décisions opérationnelles avec moins de travail manuel.
+- **Ingénieurs d'usine et mécaniques** se concentrent sur le rendement thermique de combustion et le COP des pompes à chaleur.
+- **Finance d'entreprise et CFO** examinent les obstacles du CAPEX initial et les taux d'actualisation WACC.
+- **Responsables d'installation et d'exploitation** privilégient la stabilité de l'OPEX annuel et la fiabilité de la maintenance.
+- **Équipes d'approvisionnement énergétique** se concentrent purement à négocier des tarifs unitaires de combustible plus bas.
 
-La question centrale derrière chaque projet est simple :
+Une chaudière à gaz naturel peut offrir un tarif de combustible unitaire bas mais nécessiter $500,000 de creusement de tranchées et de CAPEX de raccordement au réseau gaz. Une pompe à chaleur industrielle électrique peut faire face à des tarifs de services publics par kWh plus élevés, tout en atteignant un COP de 3.5x qui réduit considérablement le volume total d'énergie. Un système GPL ou diesel peut minimiser le CAPEX initial mais saigner de l'argent via l'OPEX variable de combustible élevé à l'échelle de production.
 
-> **« Quelles informations doivent apparaître en un seul endroit pour que la prochaine décision devienne évidente ? »**
+Le véritable goulot d'étranglement analytique n'est pas le manque de données—c'est l'absence d'un **cadre normalisé d'économie de l'ingénierie**. J'ai conçu ce classeur pour normaliser chaque vecteur énergétique concurrent dans un unique langage métier : **énergie utile livrée identique, hypothèses financières WACC identiques et structures de coût de cycle de vie identiques.**
 
-La **boîte à outils d'aide à la décision pour le coût de l'énergie industrielle et le coût total de possession (TCO)** est un exemple de cette approche—réunissant hypothèses d'ingénierie, analyse financière, calcul des coûts de cycle de vie et comparaison commerciale dans un classeur transparent que tout le monde peut examiner, auditer et adapter.
+---
+
+## Tableurs standard vs. ce cadre de TCO pour l'énergie industrielle
+
+| Dimension d'évaluation | Tableurs internes ad hoc (sans cet outil) | Cadre décisionnel de TCO normalisé (avec cet outil) |
+| :--- | :--- | :--- |
+| **Rendement thermodynamique et COP** | Les tarifs nominaux de combustible ($/kWh vs. $/m³) sont comparés directement sans ajustement du rendement de conversion, conduisant à de faux classements de coûts. | Normalise automatiquement les pouvoirs calorifiques, le rendement thermique de la chaudière (%) et le COP de la pompe à chaleur en **coût par GJ utile livré ($/GJ)**. |
+| **CAPEX d'infrastructure et WACC** | La construction initiale de gazoducs, les améliorations de transformateurs ou les installations de réservoirs sont omises des calculs de coût unitaire de combustible. | Applique le **facteur de recouvrement du capital (CRF)** en utilisant votre WACC d'entreprise pour amortir le CAPEX en un coût annuel équivalent (EAC). |
+| **Alignement interdépartemental** | L'ingénierie modélise les BTU/hr dans une feuille tandis que la finance modélise les flux de trésorerie dans une autre, ce qui produit des conclusions conflictuelles sur les propositions de CAPEX. | Unifie les paramètres d'ingénierie thermodynamique et les métriques de finance d'entreprise dans un unique **moteur de calcul transparent et prêt pour l'audit**. |
+| **Structure des tarifs des services publics et O&M** | Les charges mensuelles fixes de demande, les frais de raccordement au réseau et les coûts différentiels de maintenance sont négligés, sous-estimant l'OPEX de 15–30%. | Intègre les **frais de service fixes, les charges de demande et les programmes annuels d'O&M** aux côtés de la consommation variable de combustible. |
+| **Volatilité des prix des matières premières** | Modifier un seul prix de combustible ou taux d'actualisation nécessite de réécrire manuellement les formules dans plusieurs onglets cassés. | L'**analyse de sensibilité dynamique** recalcule instantanément les classements de cycle de vie et les points d'équilibre en $/GJ lorsque les hypothèses de marché évoluent. |
+| **Horizon d'investissement sur le cycle de vie** | Les projets sont jugés uniquement sur le coût d'exploitation de l'année 1 ou le retour sur investissement simple, masquant les passifs de coût de cycle de vie sur 10-to-20-year. | Évalue **combustible, CAPEX d'infrastructure, maintenance et coûts de financement de manière concurrente** sur l'ensemble du cycle de vie de l'actif. |
+
+---
+
+## À qui cela s'adresse : rôles cibles et cas d'usage industriels
+
+Cette boîte à outils est conçue pour les professionnels techniques et commerciaux qui ont besoin d'un **modèle Excel ou d'une calculatrice web prêt pour l'audit** pour justifier des projets d'investissement sans construire des modèles financiers complexes à partir de zéro :
+
+- **Consultants en énergie industrielle et auditeurs énergétiques :** Utilisez-le comme un **générateur de propositions clients et modèle d'analyse financière ASHRAE Level 2/3** lors de l'évaluation de changements de combustible, d'électrification de sites ou de feuilles de route de décarbonisation thermique.
+- **Ingénieurs mécaniques, des procédés et d'usine :** Utilisez-le comme une **calculatrice de remplacement de chaudières et de dimensionnement de pompes à chaleur industrielles** pour traduire les gains de rendement thermodynamique (COP vs. rendement de combustion) en métriques financières prêtes pour le CFO.
+- **Ingénieurs commerciaux CVC et cleantech :** Utilisez-le comme une **calculatrice interactive de ROI et de TCO pour le support commercial** lors des appels de découverte client pour prouver comment les équipements à haute efficacité (p. ex., pompes à chaleur électriques, biomasse ou chaudières à haut rendement) réduisent le coût total de cycle de vie malgré un CAPEX initial plus élevé.
+- **Responsables d'installation et directeurs des opérations d'usine :** Utilisez-le comme un **tableur de prévision budgétaire des services publics et de justification du CAPEX** lors de la planification de rénovations d'équipements vieillissants, de conversions GPL vers gaz naturel hors réseau ou de suppressions progressives de générateurs/chaudières diesel.
+- **Analystes financiers d'entreprise et contrôleurs de CAPEX :** Utilisez-le comme un **modèle de valorisation d'économie de l'ingénierie normalisé** pour auditer les affirmations des fournisseurs, appliquer des taux de référence WACC cohérents et mettre à l'épreuve la VAN du projet face à la volatilité des prix de l'énergie.
+- **Entrepreneurs EPC et firmes conception-construction :** Utilisez-le comme une **matrice de comparaison d'offres technico-commerciale** lors des études pré-FEED et de faisabilité pour présenter des arbitrages transparents de coût de cycle de vie multi-options aux propriétaires de projet.
+
+---
+
+## Scénarios et cas d'usage industriels fréquemment demandés
+
+Si vous recherchez un modèle fiable pour évaluer l'un des scénarios de projet d'investissement suivants, cette boîte à outils est préconfigurée pour effectuer les calculs :
+
+- **Électrification industrielle et décarbonisation :** *Comment calculer le point d'équilibre TCO entre une pompe à chaleur industrielle électrique et une chaudière à gaz naturel à vapeur/eau chaude ?*
+- **Analyse de changement de combustible hors réseau :** *Quelle est la comparaison réelle de coût de cycle de vie lors du passage d'une usine de fabrication du diesel ou du GPL en vrac au gaz naturel canalisé, en intégrant le CAPEX de gazoduc ?*
+- **Modélisation du coût nivelé de la chaleur (LCOH) :** *Comment normaliser différentes unités de facturation de combustible (kWh, Therms, Liters, kg, GJ, MMBtu) en une métrique comparable unique pour une proposition de CAPEX à la direction ?*
+- **Tests de résistance des tarifs et du prix du carbone :** *À quel rapport de prix électricité-gaz (Spark Gap) l'électrification du site devient-elle économiquement viable pour les processus de fabrication continue vs. par lots ?*
+
+---
+
+## À propos de Theseus Workshop
+
+Je conçois des cadres d'aide à la décision légers et transparents basés sur Excel et le navigateur pour les problèmes d'allocation opérationnelle et d'investissement où il y a trop de variables interactives pour être évaluées mentalement.
+
+Plutôt que de construire des plateformes SaaS d'entreprise obèses ou des logiciels de simulation boîte noire, je me concentre sur l'empaquetage de raisonnements d'ingénierie et financiers répétables dans des modèles propres et auditables qui comblent le fossé entre la faisabilité technique et la réalité commerciale.
+
+Le principe de conception central derrière chaque boîte à outils est simple :
+> **« Quelles données exactes doivent être normalisées en un seul endroit pour que la décision d'investissement optimale devienne mathématiquement évidente ? »**
+
+---
+*Mots-clés : Calculateur de coût total de possession (TCO) pour l'énergie industrielle, modèle Excel de comparaison des coûts de combustible, tableur de coût nivelé de la chaleur (LCOH), modèle de ROI chaudière vs. pompe à chaleur, calculatrice de coûts gaz naturel vs. GPL vs. électricité, modèle d'économie de l'ingénierie CAPEX OPEX.*
 
 ---
 
 ## Détails techniques
 
 <details>
-<summary><strong>Pour les relecteurs techniques, les praticiens d'Excel et les collaborateurs</strong></summary>
+<summary><strong>Pour les réviseurs techniques, les praticiens d'Excel et les collaborateurs</strong></summary>
 
 ## Architecture du classeur
 
@@ -249,15 +200,15 @@ Sensitivity Analysis          Executive Dashboard
 
 | Couche | Feuilles principales | Responsabilité |
 |--------|-------------------|----------------|
-| Navigation | Home | Guidage utilisateur et flux de travail |
-| Couche de saisie | Project Input | Hypothèses d'exploitation spécifiques au projet |
+| Navigation | Home | Orientation utilisateur et flux de travail |
+| Couche de saisie | Project Input | Hypothèses opérationnelles spécifiques au projet |
 | Couche de paramètres | Fuel Assumptions, Infrastructure Assumptions | Hypothèses d'ingénierie et financières maintenues en un seul endroit |
 | Couche de calcul | Calculation Engine | Conversion d'énergie utile, consommation annuelle de combustible, TCO, coût normalisé |
-| Couche d'analyse | Sensitivity | Tests de scénarios de marché et évolutions de classement |
-| Couche de présentation | Dashboard | Aide à la décision exécutive |
-| Couche de gouvernance | Assumption Register, User Guide | Auditabilité et procédures d'exploitation |
+| Couche d'analyse | Sensitivity | Tests de scénarios de marché et changements de classement |
+| Couche de présentation | Dashboard | Support décisionnel pour la direction |
+| Couche de gouvernance | Assumption Register, User Guide | Auditabilité et procédures opérationnelles |
 
-### Flux d'informations
+### Flux d'information
 
 ```
 Project Inputs
@@ -290,11 +241,11 @@ Normalized Cost per Useful Energy
 Economic Ranking
 ```
 
-Chaque calcul en aval référence les feuilles de paramètres en amont plutôt que des constantes codées en dur. En conséquence, la mise à jour d'un prix de combustible, d'une efficacité d'équipement, d'un taux d'actualisation ou d'un investissement d'infrastructure rafraîchit automatiquement chaque calcul dépendant dans tout le classeur.
+Chaque calcul en aval référence les feuilles de paramètres en amont plutôt que des constantes codées en dur. En conséquence, la mise à jour d'un prix de combustible, du rendement d'un équipement, du taux d'actualisation ou de l'investissement d'infrastructure rafraîchit automatiquement chaque calcul dépendant dans tout le classeur.
 
 ---
 
-## Trois pièges qui piègent même les analystes énergétiques expérimentés
+## Trois pièges qui trompent même les analystes énergétiques expérimentés
 
 ### Piège 1 — Comparer les prix des combustibles au lieu de l'énergie utile livrée
 
@@ -302,40 +253,40 @@ Une décision d'achat est prise parce que le gaz naturel semble moins cher que l
 
 Malheureusement, ces unités ne sont pas directement comparables.
 
-Le gaz naturel, le GPL, le diesel et l'électricité utilisent tous des systèmes de mesure physiques différents et des efficacités de conversion différentes.
+Le gaz naturel, le GPL, le diesel et l'électricité utilisent tous des systèmes de mesure physique et des rendements de conversion différents.
 
-Comparer seulement les prix d'approvisionnement ignore la quantité d'énergie utile réellement livrée au processus.
+Comparer uniquement les prix d'approvisionnement ignore la quantité d'énergie utile réellement livrée au procédé.
 
 | Comparaison | Approche incorrecte | Approche correcte |
 |------------|-------------------|------------------|
-| Métrique principale | Prix du combustible | Coût par Useful GJ |
-| Performance des équipements | Ignorée | Efficacité et COP incluses |
+| Métrique principale | Prix du combustible | Coût par GJ utile |
+| Performance des équipements | Ignorée | Rendement et COP inclus |
 | Résultat | Classement trompeur | Base économique comparable |
 
-Le classeur convertit d'abord chaque option en une production d'énergie utile identique avant que toute comparaison financière ne commence.
+Le classeur convertit d'abord chaque option en une sortie d'énergie utile identique avant que toute comparaison financière ne commence.
 
-Cela garantit que les technologies concurrentes sont évaluées sur une performance thermique équivalente plutôt que sur des unités d'achat incompatibles.
+Cela garantit que les technologies concurrentes sont évaluées sur un rendement thermique équivalent plutôt que sur des unités d'achat incompatibles.
 
 <details>
-<summary>Logique de formule</summary>
+<summary>Logique des formules</summary>
 
-Useful Energy Demand
-
-↓
-
-Required Physical Fuel
+Demande en énergie utile
 
 ↓
 
-Equipment Efficiency
+Combustible physique requis
 
 ↓
 
-Annual Fuel Consumption
+Rendement des équipements
 
 ↓
 
-Annual Fuel Cost
+Consommation annuelle de combustible
+
+↓
+
+Coût annuel de combustible
 
 </details>
 
@@ -343,15 +294,15 @@ Annual Fuel Cost
 
 ### Piège 2 — Ignorer l'investissement d'infrastructure
 
-Une recommandation de projet est faite sur le seul coût d'exploitation annuel.
+Une recommandation de projet est faite en utilisant uniquement le coût d'exploitation annuel.
 
-Des mois plus tard, le budget de mise en œuvre révèle qu'une option exige des mises à niveau électriques importantes, l'installation d'un gazoduc, des équipements de régulation de pression ou une infrastructure de stockage.
+Des mois plus tard, le budget de mise en œuvre révèle qu'une option nécessite des améliorations électriques importantes, une installation de gazoduc, des équipements de régulation de pression ou une infrastructure de stockage.
 
 La recommandation initiale devient soudain financièrement peu attrayante.
 
-En incorporant l'investissement d'infrastructure directement dans le coût de possession sur le cycle de vie, le classeur empêche les dépenses en capital de devenir une réflexion après coup.
+En intégrant l'investissement d'infrastructure directement dans le coût de possession sur le cycle de vie, le classeur évite que la dépense d'investissement ne devienne une réflexion après coup.
 
-Au lieu de demander
+Plutôt que de demander
 
 > « Quelle option a le coût d'exploitation le plus bas ? »
 
@@ -361,16 +312,16 @@ le modèle demande
 
 La recommandation corrigée comprend :
 
-- Le CAPEX d'infrastructure
-- La maintenance annuelle
-- La récupération du capital
-- Les frais fixes de services publics
-- Les dépenses de combustible
+- CAPEX d'infrastructure
+- Maintenance annuelle
+- Recouvrement du capital
+- Charges fixes des services publics
+- Dépenses de combustible
 
 Ce n'est qu'après avoir combiné ces composants que deux solutions techniquement faisables peuvent être comparées équitablement.
 
 <details>
-<summary>Logique de formule</summary>
+<summary>Logique des formules</summary>
 
 ```
 Annual Infrastructure CAPEX
@@ -388,35 +339,35 @@ Annual TCO
 
 ---
 
-### Piège 3 — Supposer que les prix de l'énergie d'aujourd'hui resteront constants
+### Piège 3 — Supposer que les prix actuels de l'énergie resteront constants
 
-Beaucoup de décisions d'investissement sont approuvées sur la base des prix du marché d'aujourd'hui comme s'ils représentaient les dix ou quinze prochaines années.
+De nombreuses décisions d'investissement sont approuvées en utilisant les prix du marché actuels comme s'ils représentaient les dix ou quinze prochaines années.
 
 Les marchés de l'énergie se comportent rarement ainsi.
 
 Les prix du gaz naturel fluctuent.
 
-Les tarifs d'électricité changent.
+Les tarifs électriques changent.
 
-Les prix du diesel réagissent aux perturbations de l'offre mondiale.
+Les prix du diesel répondent aux perturbations de l'offre mondiale.
 
 Les marchés du GPL varient considérablement selon les régions.
 
 Une recommandation qui semble optimale aujourd'hui peut devenir la deuxième ou troisième meilleure option après un mouvement de prix modeste.
 
-Au lieu de présenter une seule « meilleure réponse », le classeur évalue la robustesse de chaque solution sous des hypothèses changeantes.
+Au lieu de présenter une unique « meilleure réponse », le classeur évalue la robustesse de chaque solution sous des hypothèses changeantes.
 
 | Scénario | Tableur traditionnel | Ce classeur |
 |-----------|------------------------|---------------|
-| Variations des prix du combustible | Reconstruction manuelle | Recalcul automatique |
+| Évolutions des prix des combustibles | Reconstruction manuelle | Recalcul automatique |
 | Révision du CAPEX | Plusieurs formules mises à jour manuellement | Mise à jour centrale des paramètres |
 | Comparaison des classements | Difficile | Automatique |
-| Évaluation de scénarios | Un cas à la fois | Plusieurs scénarios comparables |
+| Évaluation des scénarios | Un cas à la fois | Plusieurs scénarios comparables |
 
-Les décisions commerciales deviennent nettement plus fiables car les parties prenantes peuvent voir **si une recommandation reste optimale sous une incertitude de marché réaliste**, plutôt que seulement sous les hypothèses d'aujourd'hui.
+Les décisions commerciales deviennent nettement plus fiables car les parties prenantes peuvent voir **si une recommandation reste optimale sous une incertitude de marché réaliste**, plutôt que seulement sous les hypothèses actuelles.
 
 <details>
-<summary>Logique de formule</summary>
+<summary>Logique des formules</summary>
 
 ```
 Parameter Update
@@ -444,95 +395,95 @@ Une installation de fabrication alimentaire prévoit de remplacer son système d
 
 L'équipe d'ingénierie identifie quatre alternatives techniquement faisables :
 
-- Natural Gas Boiler
-- LPG Boiler
-- Electric Heat Pump
-- Diesel Boiler
+- Chaudière au gaz naturel
+- Chaudière au GPL
+- Pompe à chaleur électrique
+- Chaudière diesel
 
-Le projet nécessite environ **18 000 Useful GJ** d'énergie thermique annuelle, fonctionne **5 200 heures par an** et utilise un **taux d'actualisation de 8 %** avec une **période de récupération du capital de 15 ans**.
+Le projet nécessite environ **18,000 GJ utiles** d'énergie thermique annuelle, fonctionne **5,200 heures par an** et utilise un **taux d'actualisation de 8%** avec une **période de récupération du capital de 15-year**.
 
-En ne regardant que les prix des combustibles, l'équipe d'approvisionnement privilégie initialement le gaz naturel car il a le coût de combustible unitaire le plus bas.
+En ne regardant que les prix des combustibles, l'équipe d'approvisionnement privilégie initialement le gaz naturel car il a le coût unitaire de combustible le plus bas.
 
 Cependant, une fois les hypothèses du projet saisies dans le classeur, le moteur de calcul évalue bien plus que les dépenses de combustible.
 
 Le modèle détermine automatiquement :
 
-- La consommation de combustible physique requise après prise en compte de l'efficacité des équipements.
-- Le coût d'achat annuel de combustible.
-- Les frais de réseau fixes mensuels.
+- La consommation de combustible physique requise après prise en compte du rendement des équipements.
+- Le coût annuel d'achat de combustible.
+- Les charges mensuelles fixes de réseau.
 - L'investissement d'infrastructure requis.
-- Les dépenses de maintenance annuelles.
-- Le coût d'infrastructure annualisé selon le taux d'actualisation choisi.
-- Le coût de possession annuel total.
-- Le coût normalisé par Useful GJ.
+- La dépense annuelle de maintenance.
+- Le coût d'infrastructure annualisé en utilisant le taux d'actualisation sélectionné.
+- Le coût total annuel de possession.
+- Le coût normalisé par GJ utile.
 - Le classement économique global.
 
-L'analyse révèle que bien que la pompe à chaleur électrique achète une énergie plus chère, son COP nettement supérieur réduit la consommation d'énergie requise suffisamment pour compenser à la fois les prix de l'électricité et les coûts d'infrastructure plus élevés.
+L'analyse révèle que, bien que la pompe à chaleur électrique achète une énergie plus chère, son COP significativement plus élevé réduit suffisamment la consommation d'énergie requise pour compenser à la fois les prix de l'électricité et les coûts d'infrastructure plus élevés.
 
-Pendant ce temps, l'option diesel nécessite un investissement d'infrastructure comparativement faible mais devient la solution la plus coûteuse dès que les coûts d'exploitation annuels sont pris en compte.
+Pendant ce temps, l'option diesel nécessite un investissement d'infrastructure comparativement faible mais devient la solution la plus chère une fois les coûts d'exploitation annuels pris en compte.
 
-Au lieu de présenter plusieurs calculs d'ingénierie déconnectés, le classeur produit une comparaison commerciale unique où chaque alternative est évaluée avec des hypothèses et une méthodologie financière identiques.
+Au lieu de présenter plusieurs calculs d'ingénierie déconnectés, le classeur produit une unique comparaison commerciale où chaque alternative est évaluée avec des hypothèses et une méthodologie financière identiques.
 
-Les décideurs peuvent donc justifier les recommandations en utilisant l'économie du cycle de vie plutôt que des composants de coût isolés.
+Les décideurs peuvent donc justifier les recommandations en utilisant l'économie de cycle de vie plutôt que des composants de coût isolés.
 
 ---
 
 ## Référence des formules
 
 <details>
-<summary>Project Input Sheet</summary>
+<summary>Feuille Project Input</summary>
 
 | Formule | Objet |
 |---------|----------|
-| IF | Conversion d'unités entre MWh et Useful GJ |
-| Data Validation | Intégrité des entrées |
+| IF | Conversion d'unités entre MWh et GJ utile |
+| Data Validation | Intégrité des saisies |
 | Named Ranges | Gestion centrale des paramètres |
 
 </details>
 
 <details>
-<summary>Fuel Assumptions</summary>
+<summary>Hypothèses de combustible</summary>
 
 | Formule | Objet |
 |---------|----------|
 | MAP() | Évaluer chaque type de combustible dynamiquement |
 | LAMBDA() | Appliquer une logique de conversion identique |
-| IF() | Séparer l'efficacité de combustion des calculs de COP de pompe à chaleur |
+| IF() | Séparer les calculs de rendement de combustion de ceux du COP des pompes à chaleur |
 
 </details>
 
 <details>
-<summary>Infrastructure Assumptions</summary>
+<summary>Hypothèses d'infrastructure</summary>
 
 | Formule | Objet |
 |---------|----------|
 | BYROW() | Agréger l'investissement d'infrastructure par technologie |
 | SUM() | Consolidation du CAPEX |
-| Dynamic Arrays | Expansion automatique lors de l'ajout de nouvelles technologies |
+| Dynamic Arrays | Expansion automatique lorsque de nouvelles technologies sont ajoutées |
 
 </details>
 
 <details>
-<summary>Calculation Engine</summary>
+<summary>Moteur de calcul</summary>
 
 | Formule | Objet |
 |---------|----------|
-| MAP() | Consommation annuelle physique de combustible |
+| MAP() | Consommation annuelle de combustible physique |
 | PMT() | Investissement d'infrastructure annualisé |
-| Dynamic Arrays | Calculs des coûts d'exploitation annuels |
+| Dynamic Arrays | Calculs de coût d'exploitation annuel |
 | RANK.EQ() | Classement économique automatique |
-| Array Arithmetic | Coût normalisé par Useful GJ |
+| Array Arithmetic | Coût normalisé par GJ utile |
 
 </details>
 
 <details>
-<summary>Sensitivity Analysis</summary>
+<summary>Analyse de sensibilité</summary>
 
 | Formule | Objet |
 |---------|----------|
 | Dynamic Arrays | Génération de la matrice de scénarios |
 | Parameter References | Mises à jour centrales des hypothèses |
-| Ranking Functions | Analyse de la stabilité des recommandations |
+| Ranking Functions | Analyse de la stabilité de la recommandation |
 
 </details>
 
@@ -540,16 +491,16 @@ Les décideurs peuvent donc justifier les recommandations en utilisant l'économ
 
 | Champ | Règle de validation | Comportement en cas d'erreur |
 |-------|-----------------|----------------|
-| Annual Useful Energy | Doit être supérieur à zéro | Calcul bloqué |
-| Operating Hours | Valeur numérique positive | Avertissement affiché |
-| Discount Rate | 0–100 % | Pourcentage invalide rejeté |
-| Amortization Period | Entier positif | Annualisation désactivée jusqu'à correction |
-| Fuel Price | Ne peut pas être négatif | Calculs de coût suspendus |
-| Equipment Efficiency | Entre 0 % et 100 % | Avertissement de validation |
-| Heat Pump COP | Supérieur à zéro | Calculs d'électricité empêchés |
-| Infrastructure CAPEX | Ne peut pas être négatif | CAPEX annualisé indisponible |
-| Monthly Fixed Charge | Ne peut pas être négatif | Avertissement de TCO annuel |
-| Maintenance Rate | Entre 0 % et 100 % | Avertissement de calcul O&M |
+| Énergie utile annuelle | Doit être supérieure à zéro | Calcul bloqué |
+| Heures d'exploitation | Valeur numérique positive | Avertissement affiché |
+| Taux d'actualisation | 0–100% | Pourcentage invalide rejeté |
+| Période d'amortissement | Entier positif | Annualisation désactivée jusqu'à correction |
+| Prix du combustible | Ne peut pas être négatif | Calculs de coût suspendus |
+| Rendement des équipements | Entre 0% et 100% | Avertissement de validation |
+| COP de la pompe à chaleur | Supérieur à zéro | Calculs d'électricité empêchés |
+| CAPEX d'infrastructure | Ne peut pas être négatif | CAPEX annualisé indisponible |
+| Charge mensuelle fixe | Ne peut pas être négative | Avertissement de TCO annuel |
+| Taux de maintenance | Entre 0% et 100% | Avertissement de calcul d'O&M |
 
 </details>
 
@@ -569,10 +520,10 @@ Les décideurs peuvent donc justifier les recommandations en utilisant l'économ
 
 Ce projet est sous licence **Apache License 2.0**.
 
-Vous êtes libre d'utiliser, de modifier et d'adapter ce classeur à des fins personnelles ou commerciales conformément aux termes de la licence Apache License 2.0.
+Vous êtes libre d'utiliser, de modifier et d'adapter ce classeur à des fins personnelles ou commerciales conformément aux termes de la licence Apache 2.0.
 
 Une copie de la licence doit être incluse avec toute redistribution ou œuvre dérivée.
 
 ---
 
-**Si ce classeur aide à améliorer vos décisions d'investissement énergétique, pensez à donner une ⭐ au dépôt pour soutenir les futurs outils d'aide à la décision.**
+**Si ce classeur aide à améliorer vos décisions d'investissement énergétique, envisagez de donner une ⭐ au dépôt pour soutenir les futurs outils d'aide à la décision.**
