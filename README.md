@@ -1,219 +1,170 @@
 [ 🌐 عربي ](README.ar.md) | [ 🇩🇪 Deutsch ](README.de.md) | [ 🇫🇷 Français ](README.fr.md) | [ 🇳🇱 Nederlands ](README.nl.md) | [ 🇪🇸 Español ](README.sp.md) | [ 🇬🇧 English ](README.md)
 
-# Industrial Energy Cost & Total Cost of Ownership (TCO) Decision Support Toolkit
+# Industrial Energy TCO Calculator & Fuel Cost Comparison Excel Template (Natural Gas vs. LPG vs. Electricity vs. Diesel)
+<img width="2880" height="1228" alt="image" src="https://github.com/user-attachments/assets/869c90a4-4548-491b-b4ae-65b7bca29c50" />
+
 
 ![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
 ![Platform](https://img.shields.io/badge/Platform-Browser%20%2B%20Excel-success)
-![Tool](https://img.shields.io/badge/Tool-Decision%20Support-orange)
+![Tool](https://img.shields.io/badge/Tool-TCO%20Financial%20Model-orange)
 
-**Compare Natural Gas, LPG, Electricity, and Diesel on a true useful-energy basis—combining fuel cost, equipment efficiency, infrastructure investment, and lifecycle ownership cost in one free, no-installation decision framework available in both Browser and Excel formats.**
+**An interactive Industrial Energy Total Cost of Ownership (TCO) Calculator and Excel Spreadsheet Model designed to compare Natural Gas, LPG, Electricity, and Diesel on a normalized useful-energy ($/GJ) basis. Evaluate industrial heating CAPEX, OPEX, boiler thermal efficiency, heat pump COP, and lifecycle ownership costs in one standardized engineering economics framework—available as a free web calculator and a downloadable Excel template.**
 
-**No signup. No installation. Free in your browser.**
+**No signup. No installation. Free to test in your browser.**
 
-Try the browser version for free. If you need the Excel version, you can buy it with a 30-day, no-questions-asked money-back guarantee.
+Use the interactive web application for rapid initial screening, or download the unlocked Excel spreadsheet model for deep financial auditing, multi-scenario saving, and client presentations—backed by a 30-day, no-questions-asked money-back guarantee.
+
+> 🌐 **Launch Free Web Calculator**  
+> [Interactive Industrial Energy Cost & TCO Web Calculator (Browser Edition)](https://hyvoid.github.io/Industrial-Energy-Cost-Total-Cost-of-Ownership-TCO-Decision-Support-Toolkit/)
 >
-> 🌐 **Open in Browser**  
-> [HTML Live Version](https://hyvoid.github.io/Industrial-Energy-Cost-Total-Cost-of-Ownership-TCO-Decision-Support-Toolkit/)
->
-> 📥 **Download Excel**  
-> [excel template purchase](https://www.theseusworkshop.com/l/wanpmw?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=industrial-energy-tco)
+> 📥 **Get the Full Spreadsheet Model**  
+> [Download the Editable Industrial Energy TCO & Fuel Comparison Excel Template](https://www.theseusworkshop.com/l/wanpmw?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=industrial-energy-tco)
 
 ---
 
-## What It Helps You Decide
+## What It Helps You Track & Decide: Pain-Point to Solution Mapping
 
-Instead of comparing fuel prices alone, this toolkit helps evaluate the complete business impact of alternative industrial energy solutions.
+Instead of comparing raw utility tariffs in isolation, this engineering economics toolkit tracks and resolves the critical blind spots in **industrial decarbonization**, **boiler replacement**, and **plant electrification** evaluations:
 
-It provides visibility into:
-
-- Annual Total Cost of Ownership (TCO) for every competing energy option.
-- Cost per unit of useful energy after accounting for equipment efficiency and heat pump COP.
-- Infrastructure investment requirements before selecting an energy source.
-- Whether operating savings justify higher capital investment.
-- How changes in fuel prices affect the preferred solution.
-- Which energy option remains economically resilient under different market conditions.
+| Target Tracking Metric / Pain Point | The Common Analytical Blind Spot | How This TCO Model Solves & Tracks It |
+| :--- | :--- | :--- |
+| **Normalized Useful Energy Cost ($/GJ or $/MMBtu)** | Comparing raw fuel prices ($/kWh, $/Therm, $/Liter) without adjusting for conversion losses. | Tracks **delivered useful heat** by factoring in combustion boiler thermal efficiency (%) and industrial heat pump COP. |
+| **Annualized Infrastructure CAPEX & WACC** | Treating pipeline connection fees, electrical substation upgrades, or storage tanks as sunk costs. | Tracks upfront **CAPEX amortization** over the asset lifecycle using your specific **Discount Rate (WACC)** via the Capital Recovery Factor. |
+| **Blended Lifecycle OPEX & Fixed Utility Tariffs** | Ignoring monthly peak demand charges, meter fees, and preventive maintenance schedules. | Tracks both variable fuel expenditure and fixed utility service charges to output a true **Annual Total Cost of Ownership (TCO)**. |
+| **Cross-Fuel Price Sensitivity & Break-Even Analysis** | Static spreadsheets break when commodity markets fluctuate or carbon pricing is introduced. | Tracks **multi-scenario fuel price sensitivity**, dynamically updating the economic ranking as electricity tariffs or gas prices shift. |
+| **Electrification vs. Fossil Fuel Trade-Offs** | Assuming industrial heat pumps are too expensive due to high per-kWh electricity tariffs. | Quantifies the exact **OPEX-to-CAPEX trade-off**, showing when high COP efficiency offsets higher electricity rates and equipment costs. |
 
 Rather than asking:
+> *"Which fuel tariff looks cheapest on paper?"*
 
-> "Which fuel is cheapest?"
-
-the workbook answers the question decision makers actually face:
-
-> **"Which energy solution delivers the lowest lifecycle cost for this project?"**
+This financial model answers the question capital project stakeholders actually face:
+> **"Which industrial heating and energy solution delivers the lowest risk-adjusted lifecycle cost for our specific plant operating profile?"**
 
 ---
 
-## Quick Start Workflow
+## How to Run an Industrial Fuel Cost & TCO Analysis (Quick Start Workflow)
 
-Getting meaningful results requires only a few minutes because the workbook separates project inputs, engineering assumptions, calculations, and reporting into dedicated layers.
+Getting audit-ready financial and engineering comparisons takes less than 5 minutes. The architecture cleanly separates project inputs, thermodynamic parameters, financial formulas, and executive reporting layers.
 
-### 1. Configure project assumptions
+### Step 1: Configure Baseline Plant & Financial Parameters
+Open the **Project Input** module to establish your facility's baseline operational and financial boundary conditions:
+- **Annual Useful Energy Demand** (GJ/year or MMBtu/year)
+- **Plant Operating Hours** (hours/year for capacity factor calculation)
+- **Weighted Average Cost of Capital (WACC / Discount Rate %)**
+- **Equipment Depreciation & CAPEX Amortization Period** (years)
 
-Open the **Project Input** sheet and enter the information that defines the project.
-
-Typical parameters include:
-
-- Annual useful energy demand
-- Operating hours
-- Discount rate (WACC)
-- CAPEX amortization period
-
-These values normally remain stable throughout an evaluation and only need updating when project assumptions change.
+*Action:* Test your baseline numbers instantly using the [Free Browser TCO Calculator](https://hyvoid.github.io/Industrial-Energy-Cost-Total-Cost-of-Ownership-TCO-Decision-Support-Toolkit/).
 
 ---
 
-### 2. Update energy and infrastructure assumptions
+### Step 2: Input Utility Tariffs, Equipment Efficiency & CAPEX Quotes
+Populate the parameter tables with your local utility rates and vendor engineering quotes:
+- **Commercial Fuel Tariffs:** Natural gas rates, bulk LPG prices, industrial electricity tariffs, and diesel fuel costs.
+- **Thermodynamic Performance:** Gas/diesel boiler thermal efficiency (%) and industrial heat pump Coefficient of Performance (COP).
+- **Capital & Fixed Costs:** Pipeline/grid infrastructure investment, monthly utility demand charges, and annual O&M costs.
 
-Maintain current market information inside the dedicated parameter sheets.
-
-Typical inputs include:
-
-- Natural gas prices
-- LPG prices
-- Electricity tariffs
-- Diesel prices
-- Equipment efficiency
-- Heat pump COP
-- Monthly service charges
-- Infrastructure investment
-- Annual maintenance costs
-
-No calculation formulas require editing.
+*Zero formula maintenance required—all unit conversions and calorific value normalizations happen automatically.*
 
 ---
 
-### 3. Review the automatically generated comparison
-
-Switch to the dashboard.
-
-The workbook immediately recalculates:
-
-- Annual fuel consumption
-- Annual fuel expenditure
-- Annualized CAPEX
-- Fixed operating costs
-- Total Cost of Ownership (TCO)
-- Normalized cost per Useful GJ
-- Economic ranking of every available option
-
-No manual recalculation or formula maintenance is required.
+### Step 3: Audit the Automated TCO Dashboard & LCOH Ranking
+Switch to the **Executive Summary Dashboard** to review the real-time engineering economics output:
+- **Annual Fuel Consumption** (in native billing units and normalized energy units)
+- **Annualized CAPEX vs. Variable OPEX Breakdown**
+- **Levelized Cost of Heat (LCOH) / Normalized Cost per Useful GJ**
+- **Automated Economic Ranking** across Natural Gas, LPG, Electricity, and Diesel
 
 ---
 
-### 4. Test different market scenarios
+### Step 4: Run Fuel Price Sensitivity Analysis & Export to Excel for Reusable Modeling
+Simulate commodity market volatility by adjusting fuel tariffs, WACC, or CAPEX assumptions to stress-test your investment decision.
 
-Adjust fuel prices, CAPEX assumptions, or financial parameters to simulate changing market conditions.
-
-Sensitivity analysis updates automatically, allowing multiple commercial scenarios to be evaluated without rebuilding the model.
-
-> **Set the assumptions once. Update market data when needed. Review the recommendation. Refresh whenever the market changes.**
-
----
-
-## Why I Built This
-
-Many industrial energy investment decisions appear straightforward because decision teams often compare only the advertised fuel price.
-
-Unfortunately, fuel price is rarely the number that determines long-term economics.
-
-A natural gas solution may require pipeline construction.
-
-An electric heat pump may consume higher-priced electricity but achieve a significantly higher coefficient of performance (COP).
-
-An LPG installation may avoid expensive infrastructure but incur higher operating costs over time.
-
-A diesel solution may appear attractive for small projects while becoming increasingly expensive once annual consumption reaches production scale.
-
-These projects frequently become discussions where every stakeholder brings a different metric.
-
-Engineering teams focus on thermal efficiency.
-
-Finance departments evaluate capital expenditure.
-
-Operations managers prioritize annual operating costs.
-
-Procurement negotiates fuel contracts.
-
-Because every participant measures a different number, comparisons become inconsistent.
-
-The real analytical problem is not missing data.
-
-It is the lack of a common decision framework.
-
-I built this workbook to normalize every competing option into the same business language:
-
-- identical useful energy delivered,
-- identical financial assumptions,
-- identical lifecycle cost structure.
-
-Instead of debating isolated metrics, every option is evaluated against one consistent economic framework.
-
-The objective is not to prove that one energy source is universally better than another.
-
-The objective is to identify which solution produces the lowest Total Cost of Ownership under the specific operating conditions of a particular project.
-
-For example, two competing proposals may initially appear to favor Natural Gas because its fuel price is lower than Electricity.
-
-After incorporating heat pump COP, infrastructure investment, annual maintenance, fixed utility charges, and capital recovery, Electricity may produce a lower annual lifecycle cost despite having a higher unit energy tariff.
-
-Without normalizing every variable into a common TCO model, that conclusion is difficult to reach with confidence.
-
-This workbook packages that analytical reasoning into a reusable decision-support framework rather than a one-off spreadsheet.
+> 💡 **Need to save your scenarios, customize formulas, or present to the board?**  
+> While the browser version is ideal for single-session screening, real-world capital projects require iterative auditing, team collaboration, and permanent documentation.  
+> 👉 **[Download the Full Unlocked Excel Template Here](https://www.theseusworkshop.com/l/wanpmw?utm_source=github&utm_medium=GitHub%20README&utm_campaign=readme%20new%20launch&utm_content=industrial-energy-tco)** to save unlimited project baselines, audit every underlying cell formula, customize sheets for different plant locations, and export board-ready charts for your CAPEX approval proposals.
 
 ---
 
-## Common Industrial Energy Evaluation Problems This Solves
+## The Business Logic & Methodology
 
-| Problem | Without This Tool | With This Tool |
-|----------|-------------------|----------------|
-| Fuel prices are compared directly despite different efficiencies. | Lower fuel price is incorrectly assumed to be the cheapest solution. | Every option is normalized to useful energy delivered before comparison. |
-| Infrastructure investment is ignored during supplier evaluation. | Capital-intensive options appear artificially attractive. | CAPEX is annualized and incorporated into Total Cost of Ownership. |
-| Different departments use different financial assumptions. | Engineering and finance reach conflicting conclusions. | All scenarios share one consistent calculation framework. |
-| Fixed utility charges are omitted. | Operating cost is systematically underestimated. | Fixed service fees are included alongside variable fuel costs. |
-| Market prices change after initial evaluation. | Every scenario requires rebuilding spreadsheets manually. | Sensitivity analysis automatically updates rankings using revised assumptions. |
-| Problem | Without This Tool | With This Tool |
-|----------|-------------------|----------------|
-| Energy projects are evaluated using first-year operating cost only. | Long-term ownership cost remains hidden until after implementation. | Fuel, infrastructure, maintenance, and financing are evaluated together over the asset lifecycle. |
+To bridge the communication gap between **Process Engineering** (who think in kW, COP, and thermal efficiency) and **Corporate Finance** (who think in WACC, NPV, and CAPEX amortization), this toolkit implements a 4-stage analytical methodology:
 
----
-
-## Who This Is For
-
-This toolkit is designed for professionals who need to compare industrial or commercial energy options using consistent financial and engineering assumptions rather than isolated cost figures.
-
-It is particularly valuable for:
-
-- Industrial energy consultants preparing customer proposals.
-- Mechanical and process engineers comparing heating technologies.
-- Commercial sales teams evaluating competing energy solutions.
-- Facility owners planning equipment replacement projects.
-- Financial analysts performing lifecycle investment analysis.
-- EPC contractors preparing technical-commercial comparisons.
-- Manufacturers evaluating future operating cost scenarios.
-
-No spreadsheet expertise is required.
-
-Users simply update project assumptions, review the dashboard, and compare the resulting recommendations.
-
-The Browser edition is intended for quick evaluation during discussions, while the Excel edition provides the complete analytical model for engineering and financial review.
-
-This workbook is **not** intended to replace enterprise energy management systems, SCADA platforms, or detailed engineering simulation software.
-
-Instead, it fills the decision gap that exists before detailed engineering begins—when multiple technically feasible solutions must be compared quickly, consistently, and transparently.
+1. **Thermodynamic Energy Normalization (The "Useful GJ" Standard):**  
+   Raw fuels are billed in incompatible units (e.g., $/kWh for electricity, $/m³ or $/MMBtu for natural gas, $/liter for diesel, $/ton for LPG). Comparing raw unit prices is mathematically flawed because a gas boiler operating at 82% thermal efficiency loses 18% of its purchased energy up the flue stack, whereas an industrial heat pump with a COP of 3.2 delivers 3.2 units of useful heat for every 1 unit of electrical energy purchased. This model applies **First-Law Thermodynamic Normalization**, converting all fuel inputs into **Cost per Delivered Useful Gigajoule ($/Useful GJ)** based on Lower Heating Values (LHV) and system conversion efficiencies.
+2. **Equivalent Annual Cost (EAC) & Capital Recovery Modeling:**  
+   Industrial energy transitions—such as switching from LPG to a Natural Gas pipeline, or electrifying a steam system—require vastly different upfront Capital Expenditures (CAPEX). Simply dividing CAPEX by project years ignores the time value of money. This toolkit utilizes the **Capital Recovery Factor (CRF)** method:
+   $$\text{Annualized CAPEX} = \text{CAPEX} \times \frac{r(1+r)^n}{(1+r)^n - 1}$$
+   *(where $r$ is the corporate WACC/discount rate and $n$ is the asset economic life).* This converts lumpy upfront infrastructure investments into an exact annual equivalent cost that can be added directly to annual operating expenses.
+3. **Full-Absorption OPEX Accounting:**  
+   Beyond variable fuel consumption, industrial utility bills carry heavy fixed structures—such as electrical peak demand charges, gas pipeline capacity reservation fees, and specialized equipment maintenance (e.g., burner tuning vs. compressor overhauls). The methodology aggregates **Annualized CAPEX + Variable Fuel Cost + Fixed Utility Tariffs + Annual O&M** to derive the true **Levelized Cost of Heat (LCOH)** and **Annual TCO**.
+4. **Deterministic Sensitivity & Break-Even Matrix:**  
+   Because industrial assets operate for 10 to 25 years, a decision based on spot energy prices exposes the enterprise to severe commodity risk. The model decouples static engineering parameters from volatile market variables, enabling instant **ceteris paribus sensitivity testing** to identify exact price break-even thresholds between competing fuels.
 
 ---
 
-## About
+## Why I Built This: Bridging the Engineering-Finance Divide
 
-I build lightweight Excel and browser-based decision-support tools for situations where there are simply too many variables to evaluate mentally.
+Many industrial energy investment decisions fail during executive review because stakeholders evaluate isolated metrics rather than a unified economic model:
 
-Rather than creating enterprise software, I focus on turning repeatable analytical reasoning into reusable frameworks that help people reach better operational decisions with less manual work.
+- **Plant & Mechanical Engineers** focus on combustion thermal efficiency and heat pump COP.
+- **Corporate Finance & CFOs** scrutinize upfront CAPEX hurdles and WACC discount rates.
+- **Facility & Operations Managers** prioritize annual OPEX stability and maintenance reliability.
+- **Energy Procurement Teams** focus purely on negotiating lower unit fuel tariffs.
 
-The central question behind every project is simple:
+A natural gas boiler may offer a low per-unit fuel tariff but require $500,000 in trenching and pipeline connection CAPEX. An industrial electric heat pump may face higher per-kWh utility tariffs, yet achieve a 3.5x COP that slashes total energy volume. An LPG or Diesel system may minimize upfront CAPEX but bleed cash through high variable fuel OPEX at production scale.
 
-> **"What information needs to appear in one place so the next decision becomes obvious?"**
+The real analytical bottleneck is not missing data—it is the lack of a **standardized engineering economics framework**. I built this workbook to normalize every competing energy vector into a single business language: **identical useful energy delivered, identical WACC financial assumptions, and identical lifecycle cost structures.**
 
-The **Industrial Energy Cost & Total Cost of Ownership (TCO) Decision Support Toolkit** is one example of that approach—bringing engineering assumptions, financial analysis, lifecycle costing, and commercial comparison together inside a transparent workbook that anyone can review, audit, and adapt.
+---
+
+## Standard Spreadsheets vs. This Industrial Energy TCO Framework
+
+| Evaluation Dimension | Ad-Hoc Internal Spreadsheets (Without This Tool) | Standardized TCO Decision Framework (With This Tool) |
+| :--- | :--- | :--- |
+| **Thermodynamic Efficiency & COP** | Nominal fuel tariffs ($/kWh vs. $/m³) are compared directly without adjusting for conversion efficiency, leading to false cost rankings. | Automatically normalizes calorific values, boiler thermal efficiency (%), and heat pump COP into **Cost per Delivered Useful GJ ($/GJ)**. |
+| **Infrastructure CAPEX & WACC** | Upfront pipeline construction, transformer upgrades, or tank installations are omitted from unit fuel cost calculations. | Applies the **Capital Recovery Factor (CRF)** using your corporate WACC to amortize CAPEX into an Equivalent Annual Cost (EAC). |
+| **Cross-Departmental Alignment** | Engineering models BTU/hr in one sheet while Finance models cash flow in another, resulting in conflicting CAPEX proposal conclusions. | Unifies thermodynamic engineering parameters and corporate finance metrics inside one **audit-ready, transparent calculation engine**. |
+| **Utility Tariff Structure & O&M** | Fixed monthly demand charges, grid connection fees, and differential maintenance costs are overlooked, underestimating OPEX by 15–30%. | Incorporates **fixed service fees, demand charges, and annual O&M schedules** alongside variable fuel consumption. |
+| **Commodity Price Volatility** | Changing a single fuel price or discount rate requires manually rewriting formulas across multiple broken tabs. | **Dynamic sensitivity analysis** recalculates lifecycle rankings and $/GJ break-even points instantly when market assumptions shift. |
+| **Lifecycle Investment Horizon** | Projects are judged solely on Year-1 operating cost or simple payback, hiding 10-to-20-year lifecycle cost liabilities. | Evaluates **fuel, infrastructure CAPEX, maintenance, and financing costs concurrently** across the entire asset lifecycle. |
+
+---
+
+## Who This Is For: Target Roles & Industrial Use Cases
+
+This toolkit is built for technical and commercial professionals who need an **audit-ready Excel template or web calculator** to justify capital projects without building complex financial models from scratch:
+
+- **Industrial Energy Consultants & Energy Auditors:** Use this as a **client proposal generator and ASHRAE Level 2/3 financial analysis template** when evaluating fuel-switching, plant electrification, or thermal decarbonization roadmaps.
+- **Mechanical, Process & Plant Engineers:** Use this as a **boiler replacement and industrial heat pump sizing calculator** to translate thermodynamic efficiency gains (COP vs. combustion efficiency) into CFO-ready financial metrics.
+- **Commercial HVAC & Cleantech Sales Engineers:** Use this as an **interactive ROI & TCO sales enablement calculator** during customer discovery calls to prove how high-efficiency equipment (e.g., electric heat pumps, biomass, or high-efficiency boilers) lowers total lifecycle cost despite higher upfront CAPEX.
+- **Facility Managers & Plant Operations Directors:** Use this as a **utility budget forecasting and CAPEX justification spreadsheet** when planning aging equipment retrofits, off-grid LPG-to-Natural Gas conversions, or diesel generator/boiler phase-outs.
+- **Corporate Financial Analysts & CAPEX Controllers:** Use this as a **standardized engineering economics valuation model** to audit vendor claims, enforce consistent WACC hurdle rates, and stress-test project NPV against energy price volatility.
+- **EPC Contractors & Design-Build Firms:** Use this as a **technical-commercial bid comparison matrix** during Pre-FEED and feasibility studies to present transparent, multi-option lifecycle cost trade-offs to project owners.
+
+---
+
+## Frequently Asked Industrial Energy Scenarios & Use Cases
+
+If you are searching for a reliable model to evaluate any of the following capital project scenarios, this toolkit is pre-configured to handle the math:
+
+- **Industrial Electrification & Decarbonization:** *How do I calculate the TCO break-even point between an industrial electric heat pump and a natural gas steam/hot water boiler?*
+- **Off-Grid Fuel Switching Analysis:** *What is the true lifecycle cost comparison when switching a manufacturing plant from Diesel or bulk LPG to piped Natural Gas, factoring in pipeline CAPEX?*
+- **Levelized Cost of Heat (LCOH) Modeling:** *How do I normalize different fuel billing units (kWh, Therms, Liters, kg, GJ, MMBtu) into a single comparable metric for an executive CAPEX proposal?*
+- **Tariff & Carbon Price Stress-Testing:** *At what electricity-to-gas price ratio (Spark Gap) does plant electrification become economically viable for continuous vs. batch manufacturing processes?*
+
+---
+
+## About Theseus Workshop
+
+I build lightweight, transparent Excel and browser-based decision-support frameworks for operational and capital allocation problems where there are too many interacting variables to evaluate mentally.
+
+Rather than building bloated enterprise SaaS platforms or black-box simulation software, I focus on packaging repeatable engineering and financial reasoning into clean, auditable models that bridge the gap between technical feasibility and commercial reality.
+
+The central design principle behind every toolkit is simple:
+> **"What exact data needs to be normalized in one place so the optimal capital decision becomes mathematically obvious?"**
+
+---
+*Keywords: Industrial Energy TCO Calculator, Fuel Cost Comparison Excel Template, Levelized Cost of Heat (LCOH) Spreadsheet, Boiler vs Heat Pump ROI Model, Natural Gas vs LPG vs Electricity Cost Calculator, Engineering Economics CAPEX OPEX Template.*
 
 ---
 
